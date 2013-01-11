@@ -316,6 +316,7 @@
 				6AC0AB77169FC4B900FDA4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
