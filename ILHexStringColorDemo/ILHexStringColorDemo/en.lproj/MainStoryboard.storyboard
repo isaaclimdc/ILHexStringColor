@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="71u-79-IVI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="71u-79-IVI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller - Hex String Color Demo-->
@@ -9,35 +9,49 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="HKK-Yn-3fX">
-                                <rect key="frame" x="20" y="100" width="280" height="85"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKK-Yn-3fX">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="VHG-nQ-rML">
-                                <rect key="frame" x="20" y="261" width="280" height="85"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHG-nQ-rML">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7sS-4T-Ta3">
-                                <rect key="frame" x="20" y="193" width="280" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sS-4T-Ta3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="sRJ-FA-JNL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4gr-KK-Dqe">
-                                <rect key="frame" x="20" y="354" width="280" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-KK-Dqe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="R75-9G-j9I"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7sS-4T-Ta3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="0z0-Re-23y"/>
+                            <constraint firstItem="VHG-nQ-rML" firstAttribute="top" secondItem="3" secondAttribute="top" constant="262" id="84r-Kw-jSk"/>
+                            <constraint firstItem="7sS-4T-Ta3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MZ3-fp-9g2"/>
+                            <constraint firstAttribute="trailing" secondItem="VHG-nQ-rML" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VUn-LF-eUN"/>
+                            <constraint firstItem="VHG-nQ-rML" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eXJ-Ca-Sce"/>
+                            <constraint firstAttribute="bottom" secondItem="4gr-KK-Dqe" secondAttribute="bottom" constant="22" id="eg2-T0-Fz7"/>
+                            <constraint firstAttribute="trailing" secondItem="7sS-4T-Ta3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eoR-xQ-mtc"/>
+                            <constraint firstItem="HKK-Yn-3fX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jzf-qX-0NX"/>
+                            <constraint firstAttribute="trailing" secondItem="HKK-Yn-3fX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="kns-NQ-e1a"/>
+                            <constraint firstItem="4gr-KK-Dqe" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mNl-ne-Vau"/>
+                            <constraint firstItem="HKK-Yn-3fX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="p1b-P9-LKA"/>
+                            <constraint firstItem="4gr-KK-Dqe" firstAttribute="top" secondItem="VHG-nQ-rML" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rDA-A3-RI7"/>
+                            <constraint firstAttribute="trailing" secondItem="4gr-KK-Dqe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rsC-re-Lkd"/>
+                            <constraint firstAttribute="bottom" secondItem="HKK-Yn-3fX" secondAttribute="bottom" constant="270" id="s2O-8U-m7c"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hex String Color Demo" id="7ER-US-UnQ"/>
                     <connections>
@@ -71,6 +85,9 @@
         </scene>
     </scenes>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
@@ -84,6 +101,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
