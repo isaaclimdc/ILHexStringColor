@@ -5,6 +5,8 @@ A simple category on UIColor that creates UIColors from hex strings.
 
 ### Version 1.1
 
+WARNING: 1.1 is a breaking change, due to the addition of support for alpha. Please update your calls to ILHexStringColor accordingly.
+
 How to use
 ----------
 A demo project `ILHexStringColorDemo` is included to show how `ILHexStringColor` can be integrated into a project.
@@ -48,7 +50,7 @@ Credits
 Version History
 ---------------
 **1.1**  
-- Added ARGB support
+- Added ARGB support (Thanks [oulgen](http://github.com/oulgen))
 
 **1.0**  
 - First publish to Github
