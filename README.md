@@ -3,7 +3,7 @@ ILHexStringColor
 
 A simple category on UIColor that creates UIColors from hex strings.
 
-### Version 1.0
+### Version 1.1
 
 How to use
 ----------
@@ -18,6 +18,10 @@ A demo project `ILHexStringColorDemo` is included to show how `ILHexStringColor`
 #### `UIColor` from `NSString` hex string
 
     UIColor *purpleColor = [UIColor colorWithHexString:@"#a81be0"];
+
+  or with Alpha
+
+    UIColor *purpleColor = [UIColor colorWithHexString:@"#23a81be0"];
 
 #### `NSString` hex string from `UIColor`
 
@@ -39,6 +43,8 @@ Credits
 
 Version History
 ---------------
+**1.1**  
+- Added ARGB support
 **1.0**  
 - First publish to Github
 
