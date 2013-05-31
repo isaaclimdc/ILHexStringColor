@@ -17,6 +17,8 @@ A demo project `ILHexStringColorDemo` is included to show how `ILHexStringColor`
 
 #### `UIColor` from `NSString` hex string
 
+  This can either take RGB or ARGB.
+
     UIColor *purpleColor = [UIColor colorWithHexString:@"#a81be0"];
 
   or with Alpha
@@ -26,6 +28,8 @@ A demo project `ILHexStringColorDemo` is included to show how `ILHexStringColor`
 #### `NSString` hex string from `UIColor`
 
     NSString *bkgHex = [UIColor hexStringFromColor:self.view.backgroundColor];
+
+  This returns the color in ARGB format.
 
 Requirements
 ------------
