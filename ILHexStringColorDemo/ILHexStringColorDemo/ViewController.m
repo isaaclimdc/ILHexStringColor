@@ -21,8 +21,8 @@
     self.box1.backgroundColor = [UIColor colorWithHexString:@"#a81be0"];
     self.label1.text = [NSString stringWithFormat:@"Box 1: %@", [UIColor hexStringFromColor:self.box1.backgroundColor]];
 
-    /* Green */
-    self.box2.backgroundColor = [UIColor colorWithHexString:@"1BE01B"];
+    /* Green With Alpha value 0x66 */
+    self.box2.backgroundColor = [UIColor colorWithHexString:@"661BE01B"];
     self.label2.text = [NSString stringWithFormat:@"Box 2: %@",[UIColor hexStringFromColor:self.box2.backgroundColor]];
 }
 

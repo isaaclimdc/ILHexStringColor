@@ -1,6 +1,6 @@
 //
 // UIColor+ILHexStringColor
-// Version 1.0
+// Version 1.1
 // Created by Isaac Lim (isaacl.net) on 1/1/13.
 //
 
@@ -31,15 +31,17 @@
 @interface UIColor (ILHexStringColor)
 
 /**
- * Get a UIColor from a given hex string in the form "#ff7c4a" or "ff7c4a".
- * @param str The hex string in the above form.
+ * Get a UIColor from a given hex string in the form "#ff7c4a", "ff7c4a"
+ * "#01ff7c4a" or "11ff7c4a".
+ * @param str The hex string in the above form. (Either RGB or ARGB)
  *
  * @return The resulting UIColor. If str is malformed, returns nil.
  */
 + (UIColor *)colorWithHexString:(NSString *)str;
 
 /**
- * Get the hex value of a UIColor in string form, eg. "#ff7c4a".
+ * Get the hex value of a UIColor in string form, eg. "#12ff7c4a".
+ * This form is ARGB.
  * @param color The UIColor to extract a hex string from.
  *
  * @return The NSString hex string. If color is malformed, returns nil.
