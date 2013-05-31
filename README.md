@@ -45,6 +45,7 @@ Version History
 ---------------
 **1.1**  
 - Added ARGB support
+
 **1.0**  
 - First publish to Github
 
